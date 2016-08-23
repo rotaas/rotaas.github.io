@@ -3,48 +3,84 @@
     <head>
         <title>My First HTML</title>
         <meta charset="UTF-8">
+        <style>
+            body        {
+                background-color:red;}
+            a:link      {
+                color:green;
+                background-color:transparent;
+                text-decoration:none;}
+            a:visited   {
+                color:pink;
+                background-color:transparent;
+                text-decoration:none}
+            a:hover     {
+                color:yellow;
+                background-color:transparent;
+                text-decoration:underline;}
+            a:active    {
+                color:yellow;
+                background-color:transparent;
+                text-decoration:underline;}
+            table,th,td {
+                border:1px solid black;
+                border-collapse:collapse;}
+            table{
+                border-spacing: 5px;
+            }
+            th,td{
+                padding:30px;}
+            th{
+                text-align: left;
+            }
+            
+            #p01        {
+                color:blue;}
+            table#t01{
+                width:100%;
+                background-color: #f1f1c1;
+            }
+            table#t02 tr:nth-child(even){
+                background-color: #eee;
+            }
+            table#t02 tr:nth-child(odd){
+                background-color: #fff;
+            }
+            table#t02 th{
+                color: white;
+                background-color: black;
+            }
+        </style>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-        </script>
-        
-        <!-- Latest compiled JavaScript -->
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-        </script>
-                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body style="background-color:powderblue;font-size:250%;">
         <div class="container">
             
             <h1 style="color:blue;font-family:verdana;font-size:300%;text-align:center;">This is heading 1</h1>
             <p title="I'm 'a' tooltip" style="color:red;font-family:courier;font-size:160%;text-align:center;">This is a paragraph.</p>
-            <p style="font-size:50px;">This is another paragraph.</p>
-            <br />
-            <b>This text is bold</b>
-            <br/>
-            <strong>This text is strong</strong>
-            <br/>
-            <em>This text is emphasized</em>
-            <br/>
+            <p style="font-size:50px;color:orange;">This is another paragraph.</p><br>
+            <b style="color:yellow;">This text is bold</b><br>
+            <strong style="color:cyan;">This text is strong</strong><br>
+            <em style="color:rgb(183,133,36);">This text is emphasized</em><br>
             
-            <h2>This is the <small>small</small> heading 2</h2>
-            <a href="http://www.w3schools.com">This is a link</a>
-            <p>This is some text.</p>
-            <br>
-            <p>My favorite color is <del>red</del> blue.</p>
-            <br>
-            <p>My favorite <ins>color</ins> is blue.</p>
-            <br>
-            <p>This is <sub>subscripted</sub> text.</p>
-            <br>
-            <p>This is <sup>superscripted</sup> text.</p>
-            <br>
-            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-            <br>
+            <h2 style="color:#985132;">This is the <small>small</small> heading 2</h2>
+            <a href="http://www.w3schools.com">This is a link</a><br>
+            <a href="http://www.w3schools.com/html/" target="_blank">Visit our HTML tutorial</a><br>
+            <a href="default.asp">
+                <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+            </a>
+            <!-- Local links -->
+            <!-- Link to other page on website -->
+            <p style="color:blue;">This is some text.</p><br>
+            <p style="border:1px solid red;padding:30px;margin:50px;">My favorite color is <del>red</del> blue.</p><br>
+            <p id="p01">My favorite <ins>color</ins> is blue.</p><br>
+            <p>This is <sub>subscripted</sub> text.</p><br>
+            <p>This is <sup>superscripted</sup> text.</p><br>
+            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p><br>
             <p>Here is a quote from WWF's website:</p>
             <blockquote cite="http://www.worldwildlife.org/who/index.html">
             For 50 years, WWF has been protecting the future of nature.
@@ -52,25 +88,34 @@
             WWF works in 100 countries and is supported by
             1.2 million members in the United States and
             close to 5 million globally.
-            </blockquote>
-            <br>
-            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-            <br>
+            </blockquote><br>
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><br>
             <address>
             Written by John Doe.<br>
             Visit us at:<br>
             Example.com<br>
             Box 564, Disneyland<br>
             USA
-            </address>
-            <br>
-            <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-            <br>
-            <bdo dir="rtl">This text will be written from right to left</bdo>
+            </address><br>
+            <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><br>
+            <bdo dir="rtl">This text will be written from right to left</bdo><br>
+            <a href="#tips">Visit the Useful Tips Section</a>
             <hr>
             
             <h3>This is the <mark>marked</mark> heading 3</h3>
-            <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+            <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"><br>
+            <img src="wrongname.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
+            <!-- Using style attribute is preferred -->
+            <img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"><br>
+            <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+            <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">The image will float to the right of the text.</p>
+            <p><img src="smiley.gif" alt="Smiley fact" style="float:left;width:42px;height:42px">The image will float to the left of the text.</p><br>
+            <img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
+                <map name="planetmap">
+                    <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+                    <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+                    <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+                </map>
             <p>This is some other text.</p><br>
             <kbd>File | Open...</kbd><br>
             <samp>
@@ -83,9 +128,51 @@
             document.getElementById("demo").innerHTML = x + y;
             </code></pre><br>
             <p>Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.</p>
+            <table id="t02" style="width:100%">
+                <caption>Monthly savings</caption>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+            </table>
+            <table id="t01" style="width:100%;">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Telephone</th>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>55577854</td>
+                    <td>55577855</td>
+                </tr>
+            </table>
+            <table style="width:100%;">
+                <tr>
+                    <th>Name:</th>
+                    <td>Bill Gates</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Telephone:</th>
+                    <td>55577854</td>
+                </tr>
+                <tr>
+                    <td>5557855</td>
+                </tr>
+            </table>
             <hr>
             
-            <h4>This is heading 4</h4>
+            <h4 id="tips">Useful Tips Section</h4>
             <p>
             My Bonnie lies over the ocean.
             <br>

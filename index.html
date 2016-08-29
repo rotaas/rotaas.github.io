@@ -8,7 +8,17 @@
         <meta name="author" content="Hege Refsnes">
         <!-- meta http-equiv="refresh" content="30" -->
         <base href="http://rotaas.me">
+        <!-- header, footer, aside, nav, main, article, figure {
+            display: block;
+        } -->
+        <script>document.createElement('myHero')</script>
         <style>
+            myHero {
+                display: block;
+                background-color: #dddddd;
+                padding: 50px;
+                font-size: 30px;
+            }
             body        {
                 background-color:red;}
             a:link      {
@@ -87,6 +97,8 @@
     
     <body style="background-color:powderblue;font-size:250%;">
         <div class="container">
+            
+            <myHero>My Hero!</myHero>
             
             <h1 style="color:blue;font-family:verdana;font-size:300%;text-align:center;">This is heading 1</h1>
             <p title="I'm 'a' tooltip" style="color:red;font-family:courier;font-size:160%;text-align:center;">This is a paragraph.</p>
@@ -210,11 +222,13 @@
             <br>
             Oh, bring back my Bonnie to me.
             </p>
-            <form>
+            <div style="background-color:green">
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)" autocomplete="on" id="form1">
+                <!-- <form novalidate> -->
                 <fieldset>
                     <legend>Personal information</legend>
                     First name:<br>
-                    <input type="text" name="firstname"><br>
+                    <input type="text" name="firstname" placeholder="First" size="40" maxlength="30" autofocus form="form1" required><br>
                     Last name:<br>
                     <input type="text" name="lastname"><br>
                 </fieldset>
@@ -231,8 +245,42 @@
 The cat was playing in the garden.
                 </textarea>
                 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+                0
+                <input type="range" id="a" name="a" value="50">
+                100 +
+                <input type="number" id="b" name="b" value="50" min="1" max="100">
+                =
+                <output name="x" for="a b"></output>
+                <!-- step="" for "number" and "range" inputs -->
+                <!-- <input readonly> -->
+                <!-- <input disabled> -->
+                <!-- pattern attribute -->
+                <!-- step attribute -->
+                <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
+                <input type="checkbox" name="vehicle2" value="Car">I have a car
+                <input type="date" name="bday" min="2000-01-02" max="2001-01002"><br>
+                <input type="color" name="favcolor"><br>
+                <input type="month" name="bdaymonth"><br>
+                <input type="week" name="week_year"><br>
+                <input type="time" name="usr_time"><br>
+                <input type="datetime-local" name="bday time"><br>
+                <input type="email" name="email" value="example@calpoly.edu" multiple><br>
+                <input type="search" name="googlesearch" value="Search"><br>
+                <input type="tel" name="usrtel" value="Telephone #"><br>
+                <input type="url" name="homepage" value="URL"><br>
+                <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+                <input type="reset">
             </form>
-            
+            </div>
+                
             <h5>This is heading 5</h5>
             <ul style="list-style-type:none">
                 <li>Coffee</li>

@@ -96,16 +96,33 @@
     <!-- &nbsp -->
     
     <body style="background-color:powderblue;font-size:250%;">
+        <nav>
+            <a href="/screenshots/">Screenshots</a> |
+            <a href="/index/">Index</a>
+        </nav>
         <div class="container">
             
+            <article>
+            <header>
             <myHero>My Hero!</myHero>
+            </header>
+            </article>
             
+            <aside>What up what up</aside>
+            
+            <section>
             <h1 style="color:blue;font-family:verdana;font-size:300%;text-align:center;">This is heading 1</h1>
             <p title="I'm 'a' tooltip" style="color:red;font-family:courier;font-size:160%;text-align:center;">This is a paragraph.</p>
             <p style="font-size:50px;color:orange;">This is another paragraph.</p><br>
             <b style="color:yellow;">This text is bold</b><br>
             <strong style="color:cyan;">This text is strong</strong><br>
             <em style="color:rgb(183,133,36);">This text is emphasized</em><br>
+            </section>
+            <canvas id="mycanvas" width="200px" height="100px">
+                <svg width="100px" height="100px">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                </svg>
+            </canvas>
             
             <h2 style="color:#985132;">This is the <small>small</small> heading 2</h2>
             <a href="http://www.w3schools.com">This is a link</a><br>
@@ -143,7 +160,11 @@
             <hr>
             
             <h3>This is the <mark>marked</mark> heading 3</h3>
-            <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"><br>
+            <figure>
+            <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+            <figcaption>This is supposed to be an image</figcaption>
+            </figure>
+            <br>
             <img src="wrongname.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
             <!-- Using style attribute is preferred -->
             <img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"><br>
@@ -345,5 +366,9 @@ The cat was playing in the garden.
             <h2>Tokyo</h2>
             <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the <span class="note">most</span> populous metropolitan area in the world.</p>
         </div>
+        
+        <footer>
+            <p>What's up dude</p>
+        </footer>
     </body>
 </html>

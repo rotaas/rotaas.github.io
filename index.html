@@ -1,375 +1,55 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>My First HTML</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Free Web tutorials">
-        <meta name="keywords" content="HTML, CSS, XML, JavaScript">
-        <meta name="author" content="Hege Refsnes">
-        <!-- meta http-equiv="refresh" content="30" -->
-        <base href="http://rotaas.me">
-        <!-- header, footer, aside, nav, main, article, figure {
-            display: block;
-        } -->
-        <script>document.createElement('myHero')</script>
+        <title>Welcome to Rob Taas's (that's me) Website!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
         <style>
-            myHero {
-                display: block;
-                background-color: #dddddd;
-                padding: 50px;
-                font-size: 30px;
-            }
-            body        {
-                background-color:red;}
-            a:link      {
-                color:green;
-                background-color:transparent;
-                text-decoration:none;}
-            a:visited   {
-                color:pink;
-                background-color:transparent;
-                text-decoration:none}
-            a:hover     {
-                color:yellow;
-                background-color:transparent;
-                text-decoration:underline;}
-            a:active    {
-                color:yellow;
-                background-color:transparent;
-                text-decoration:underline;}
-            table,th,td {
-                border:1px solid red;
-                border-collapse:collapse;
-                padding: 20px;}
-            table {
-                border-spacing: 5px;}
-            th, td {
-                padding: 20px;}
-            th{
-                text-align: right;
-            }
-            li a {
-                display: block;
-                color: white;
+            div.container {
                 text-align: center;
-                padding: 16px;
-                text-decoration: none;
+                margin-top: 60px;
             }
-            li a:hover {
-                background-color: #111111;
+            div.jumbotron {
+                background-color: dodgerblue;
+                border-style: solid;
+                border-width: 5px;
             }
-            
-            #p01        {
-                color:blue;}
-            table#t01{
-                width:100%;
-                background-color: #f1f1c1;
+            img.jumbopic {
+                width: 300px;
+                border-style: solid;
+                border-width: 5px;
+                border-radius: 25px;
             }
-            table#t02 tr:nth-child(even){
-                background-color: #eee;
-            }
-            table#t02 tr:nth-child(odd){
-                background-color: #fff;
-            }
-            table#t02 th{
-                color: white;
-                background-color: black;
-            }
-            div.cities {
-                background-color: black;
-                color: white;
-                margin: 20px 0 20px 0;
-                padding: 20px;
-            }
-            span.note {
-                font-size: 120%;
-                color: red;
+            p.jumbop {
+                font-size: 175%;
             }
         </style>
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     
-    <!-- &nbsp -->
-    
-    <body style="background-color:powderblue;font-size:250%;">
-        <nav>
-            <a href="/screenshots/">Screenshots</a> |
-            <a href="/index/">Index</a>
-        </nav>
+    <body style="background-color: deepskyblue;">
         <div class="container">
-            
-            <article>
-            <header>
-            <myHero>My Hero!</myHero>
-            </header>
-            </article>
-            
-            <aside>What up what up</aside>
-            
-            <section>
-            <h1 style="color:blue;font-family:verdana;font-size:300%;text-align:center;">This is heading 1</h1>
-            <p title="I'm 'a' tooltip" style="color:red;font-family:courier;font-size:160%;text-align:center;">This is a paragraph.</p>
-            <p style="font-size:50px;color:orange;">This is another paragraph.</p><br>
-            <b style="color:yellow;">This text is bold</b><br>
-            <strong style="color:cyan;">This text is strong</strong><br>
-            <em style="color:rgb(183,133,36);">This text is emphasized</em><br>
-            </section>
-                <svg width="100px" height="100px">
-                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-                </svg>
-            <svg width="400" height="100">
-                <rect width="400" height="100" style="fill:rgb(0,0,225);stroke-width:10;stroke:rgb(0,0,0)" />
-            </svg>
-            
-            <h2 style="color:#985132;">This is the <small>small</small> heading 2</h2>
-            <a href="http://www.w3schools.com">This is a link</a><br>
-            <a href="http://www.w3schools.com/html/" target="_blank">Visit our HTML tutorial</a><br>
-            <a href="default.asp">
-                <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
-            </a>
-            <!-- Local links -->
-            <!-- Link to other page on website -->
-            <p style="color:blue;">This is some text.</p><br>
-            <p style="border:1px solid red;padding:30px;margin:50px;">My favorite color is <del>red</del> blue.</p><br>
-            <p id="p01">My favorite <ins>color</ins> is blue.</p><br>
-            <p>This is <sub>subscripted</sub> text.</p><br>
-            <p>This is <sup>superscripted</sup> text.</p><br>
-            <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p><br>
-            <p>Here is a quote from WWF's website:</p>
-            <blockquote cite="http://www.worldwildlife.org/who/index.html">
-            For 50 years, WWF has been protecting the future of nature.
-            The world's leading conservation organization,
-            WWF works in 100 countries and is supported by
-            1.2 million members in the United States and
-            close to 5 million globally.
-            </blockquote><br>
-            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p><br>
-            <address>
-            Written by John Doe.<br>
-            Visit us at:<br>
-            Example.com<br>
-            Box 564, Disneyland<br>
-            USA
-            </address><br>
-            <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p><br>
-            <bdo dir="rtl">This text will be written from right to left</bdo><br>
-            <a href="#tips">Visit the Useful Tips Section</a>
-            <hr>
-            
-            <h3>This is the <mark>marked</mark> heading 3</h3>
-            <figure>
-            <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
-            <figcaption>This is supposed to be an image</figcaption>
-            </figure>
-            <br>
-            <img src="wrongname.gif" alt="HTML5 Icon" style="width:128px;height:128px;"><br>
-            <!-- Using style attribute is preferred -->
-            <img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"><br>
-            <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
-            <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">The image will float to the right of the text.</p>
-            <p><img src="smiley.gif" alt="Smiley fact" style="float:left;width:42px;height:42px">The image will float to the left of the text.</p><br>
-            <img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;">
-                <map name="planetmap">
-                    <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
-                    <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
-                    <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
-                </map>
-            <p>This is some other text.</p><br>
-            <kbd>File | Open...</kbd><br>
-            <samp>
-            demo.example.com login: Apr 12 09:10:17
-            Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
-            </samp><br>
-            <pre><code>
-            var x = 5;
-            var y=6;
-            document.getElementById("demo").innerHTML = x + y;
-            </code></pre><br>
-            <p>Einstein wrote: <var>E</var> = <var>m</var><var>c</var><sup>2</sup>.</p>
-            <table id="t02" style="width:100%;">
-                <caption>Monthly savings</caption>
-                <tr>
-                    <th style="padding: 20px;">Firstname</th>
-                    <th>Lastname</th>
-                    <th>Age</th>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                </tr>
-            </table>
-            <table id="t01" style="width:100%;">
-                <tr>
-                    <th>Name</th>
-                    <th colspan="2">Telephone</th>
-                </tr>
-                <tr>
-                    <td>Bill Gates</td>
-                    <td>55577854</td>
-                    <td>55577855</td>
-                </tr>
-            </table>
-            <table style="width:100%;">
-                <tr>
-                    <th>Name:</th>
-                    <td>Bill Gates</td>
-                </tr>
-                <tr>
-                    <th rowspan="2">Telephone:</th>
-                    <td>55577854</td>
-                </tr>
-                <tr>
-                    <td>5557855</td>
-                </tr>
-            </table>
-            <hr>
-            
-            <h4 id="tips">Useful Tips Section</h4>
-            <p>
-            My Bonnie lies over the ocean.
-            <br>
-            My Bonnie lies over the sea.
-            <br>
-            My Bonnie lies over the ocean.
-            <br>
-            Oh, bring back my Bonnie to me.
-            </p>
-            <div style="background-color:green">
-            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)" autocomplete="on" id="form1">
-                <!-- <form novalidate> -->
-                <fieldset>
-                    <legend>Personal information</legend>
-                    First name:<br>
-                    <input type="text" name="firstname" placeholder="First" size="40" maxlength="30" autofocus form="form1" required><br>
-                    Last name:<br>
-                    <input type="text" name="lastname"><br>
-                </fieldset>
-                <input type="radio" name="gender" value="male" checked>Male<br>
-                <input type="radio" name="gender" value="female">Female<br>
-                <input type="radio" name="gender" value="other">Other<br>
-                <select name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab" selected>Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select><br>
-                <textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-                </textarea>
-                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
-                <input list="browsers">
-                <datalist id="browsers">
-                    <option value="Internet Explorer"></option>
-                    <option value="Firefox"></option>
-                    <option value="Chrome"></option>
-                    <option value="Opera"></option>
-                    <option value="Safari"></option>
-                </datalist>
-                0
-                <input type="range" id="a" name="a" value="50">
-                100 +
-                <input type="number" id="b" name="b" value="50" min="1" max="100">
-                =
-                <output name="x" for="a b"></output>
-                <!-- step="" for "number" and "range" inputs -->
-                <!-- <input readonly> -->
-                <!-- <input disabled> -->
-                <!-- pattern attribute -->
-                <!-- step attribute -->
-                <input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
-                <input type="checkbox" name="vehicle2" value="Car">I have a car
-                <input type="date" name="bday" min="2000-01-02" max="2001-01002"><br>
-                <input type="color" name="favcolor"><br>
-                <input type="month" name="bdaymonth"><br>
-                <input type="week" name="week_year"><br>
-                <input type="time" name="usr_time"><br>
-                <input type="datetime-local" name="bday time"><br>
-                <input type="email" name="email" value="example@calpoly.edu" multiple><br>
-                <input type="search" name="googlesearch" value="Search"><br>
-                <input type="tel" name="usrtel" value="Telephone #"><br>
-                <input type="url" name="homepage" value="URL"><br>
-                <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
-                <input type="reset">
-            </form>
+            <div class="jumbotron">
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure>
+                            <img class="jumbopic" src="https://raw.githubusercontent.com/rotaas/rotaas.github.io/master/site_pro_po.jpg" alt="Whoops, no prom photo for you!">
+                            <figcaption style="font-size: 125%;">A scandalous photo of me during senior prom</figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <h1>おはようございます!</h1><br>
+                        <p class="jumbop">My name is Rob Taas, but you can call me Rob.</p><br>
+                        <p class="jumbop">I'm studying Aerospace Engineering at Cal Poly SLO, and I love life!</p><br>
+                        <p class="jumbop">Thanks for visiting my website!</p>
+                    </div>
+                </div>
             </div>
-                
-            <h5>This is heading 5</h5>
-            <ul style="list-style-type:none">
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-            </ul>
-            <ol type="I">
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-            </ol>
-            <dl>
-                <dt>Coffee</dt>
-                <dd>- black hot drink</dd>
-                <dt>Milk</dt>
-                <dd>- white cold drink</dd>
-            </dl>
-            <ul>
-                <li>Coffee</li>
-                <li>Tea
-                    <ul>
-                        <li>Black tea</li>
-                        <li>Green tea</li>
-                    </ul>
-                </li>
-                <li>Milk</li>
-            </ul>
-            <ul style="
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overlow: hidden;
-                background-color: #333333;">
-                <li style="float: left"><a class="active" href="#home">Home</a></li>
-                <li style="float: left"><a href="#news">News</a></li>
-                <li style="float: left"><a href="#contact">Contact</a></li>
-                <li style="float: left"><a href="#about">About</a></li>
-            </ul>
-            <iframe src="demo_ifram.htm" height="200" width="300" style="border:none"></iframe>
-            <iframe src="demo_iframe.htm" name="iframe_a"></iframe>
-            <p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
-            <p id="demo"></p>
-            <script>document.getElementById("demo").innerHTML = "Hello JavaScript!";</script>
         </div>
-        
-        <div style="background-color:black;color:white;padding:20px;">
-            <h6>London</h6>
-            <p>London is the capital city of England. It is the <span style="color:red">most</span> populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-        </div>
-        
-        <div class="cities">
-            <h2>London</h2>
-            <p>London is the capital of England. It is the most populous icty in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-        </div>
-        
-        <div class="cities">
-            <h2>Paris</h2>
-            <p>Paris is the capital and most populous city of France.</p>
-        </div>
-        
-        <div class="cities">
-            <h2>Tokyo</h2>
-            <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the <span class="note">most</span> populous metropolitan area in the world.</p>
-        </div>
-        
-        <footer>
-            <p>What's up dude</p>
-        </footer>
     </body>
 </html>

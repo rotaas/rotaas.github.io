@@ -9,7 +9,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
+        <link href="//fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+        
         <style>
+            body {
+                background-color: deepskyblue;
+                font-family: Sofia;
+            }
             div.container {
                 text-align: center;
                 margin-top: 60px;
@@ -19,11 +25,14 @@
                 border-style: solid;
                 border-width: 5px;
             }
-            img.jumbopic {
+            img {
                 width: 300px;
                 border-style: solid;
                 border-width: 5px;
                 border-radius: 25px;
+            }
+            figcaption {
+                font-size: 125%;
             }
             p.jumbop {
                 font-size: 175%;
@@ -31,14 +40,15 @@
         </style>
     </head>
     
-    <body style="background-color: deepskyblue;">
+    <body>
+        <p style="font-family: Sofia;">Yo</p>
         <div class="container">
             <div class="jumbotron">
                 <div class="row">
                     <div class="col-md-4">
                         <figure>
-                            <img class="jumbopic" src="https://raw.githubusercontent.com/rotaas/rotaas.github.io/master/site_pro_po.jpg" alt="Whoops, no prom photo for you!">
-                            <figcaption style="font-size: 125%;">A scandalous photo of me during senior prom</figcaption>
+                            <img src="https://raw.githubusercontent.com/rotaas/rotaas.github.io/master/site_pro_po.jpg" alt="Whoops, no prom photo for you!">
+                            <figcaption>A scandalous photo of me during senior prom</figcaption>
                         </figure>
                     </div>
                     
